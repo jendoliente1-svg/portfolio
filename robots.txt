@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://porfolionimamao.netlify.app/sitemap.xml
