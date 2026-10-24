@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8f6ff">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styleport.css">
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="#home">My Portfolio</a>
+            <input class="menu-check" type="checkbox" id="menu-check" aria-label="Toggle navigation">
+            <label class="menu-toggle" for="menu-check" aria-hidden="true"><span class="menu-open">☰</span><span class="menu-close">×</span></label>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <input class="theme-check" type="checkbox" id="theme-check" aria-label="Switch to dark mode">
+            <label class="theme-toggle" for="theme-check" title="Switch color theme"><span class="theme-light" aria-hidden="true">☾</span><span class="theme-dark" aria-hidden="true">☀</span></label>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text reveal">
+                <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+                <h1 class="hover-word">Hello, I'm <span>Jenny Doliente</span></h1>
+                <h2 class="hero-role hover-word">And, I'm <span>Front-End Developer</span></h2>
+                <p>A BSIT student who enjoys creating simple websites, learning technology, and exploring new ideas.</p>
+                <a href="#about" class="button">About Me</a>
+            </div>
+            <div class="hero-card tilt-card reveal" data-tilt>
+                <img src="1000050918.jpg" alt="My Profile Picture" class="profile-image">
+            </div>
+        </section>
+        <section id="about" class="section light-section">
+            <div class="section-content"><div><p class="small-title reveal">GET TO KNOW ME</p><h2 class="reveal">About Me</h2></div><p class="reveal reveal-right">I am a BSIT student interested in web development and technology. I enjoy learning how websites work and creating simple designs that are easy to use.</p></div>
+        </section>
+        <section id="education" class="section education-section">
+            <p class="small-title reveal">MY ACADEMIC JOURNEY</p>
+            <h2 class="reveal">Educational Background</h2>
+            <article class="education-card reveal">
+                <span class="education-mark" aria-hidden="true">✦</span>
+                <div>
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p class="education-school">Data Center College of the Philippines</p>
+                    <p class="education-major">Major in Web Development</p>
+                    <p class="education-status">Currently studying</p>
+                </div>
+            </article>
+        </section>
+        <section id="skills" class="section skills-section">
+            <p class="small-title reveal">WHAT I'M LEARNING</p><h2 class="reveal">Skills</h2>
+            <div class="cards skills-grid">
+                <article class="skill-card reveal"><span class="skill-mark">&lt;/&gt;</span><h3>HTML</h3><p>Building clear page structure.</p></article>
+                <article class="skill-card reveal"><span class="skill-mark">✦</span><h3>CSS</h3><p>Styling responsive, polished layouts.</p></article>
+                <article class="skill-card reveal"><span class="skill-mark">JS</span><h3>JavaScript</h3><p>Adding useful interaction to websites.</p></article>
+                <article class="skill-card reveal"><span class="skill-mark">◇</span><h3>UI Design</h3><p>Creating organized and easy-to-use interfaces.</p></article>
+            </div>
+        </section>
+        <section id="services" class="section">
+            <p class="small-title reveal">WHAT I CAN DO</p><h2 class="reveal">Services</h2>
+            <div class="cards">
+                <article class="card tilt-card reveal" data-tilt><h3>Web Design</h3><p>Creating simple and clean website layouts.</p></article>
+                <article class="card tilt-card reveal" data-tilt><h3>HTML &amp; CSS</h3><p>Building beginner-friendly web pages using HTML and CSS.</p></article>
+                <article class="card tilt-card reveal" data-tilt><h3>Basic UI Design</h3><p>Designing organized and easy-to-understand interfaces.</p></article>
+            </div>
+        </section>
+        <section id="notes" class="section light-section">
+            <p class="small-title reveal">MY NOTES</p><h2 class="reveal">Notes</h2>
+            <div class="note reveal"><h3>Keep Learning</h3><p>Every project is a chance to learn something new. Start simple, practice often, and improve little by little.</p></div>
+        </section>
+        <section id="contact" class="section contact">
+            <p class="small-title reveal">GET IN TOUCH</p><h2 class="reveal">Contact</h2><p class="reveal">If you want to connect with me, you can send me a message.</p>
+            <address class="contact-details reveal">
+                <p><strong>Name</strong><span>Jenny Doliente</span></p>
+                <p><strong>Email</strong><a href="mailto:jendoliente1@gmail.com">jendoliente1@gmail.com</a></p>
+                <p><strong>Phone</strong><a href="tel:0999986754">0999986754</a></p>
+                <p><strong>Location</strong><span>Switzerland</span></p>
+                <p><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/jenny-doliente/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+            </address>
+            <form class="contact-form reveal" action="mailto:jendoliente1@gmail.com" method="post" enctype="text/plain">
+                <label for="contact-name">Your name</label>
+                <input id="contact-name" name="name" type="text" placeholder="Jane Doe" autocomplete="name" required>
+                <label for="contact-email">Your email</label>
+                <input id="contact-email" name="email" type="email" placeholder="jane@example.com" autocomplete="email" required>
+                <label for="contact-message">Your message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Tell me a little about what you have in mind..." required></textarea>
+                <button class="button" type="submit">Send Message <span aria-hidden="true">→</span></button>
+                <p class="form-note" aria-live="polite">This form opens your email app with your message ready to send.</p>
+            </form>
+        </section>
+    </main>
+    <footer><p>© 2026 My Portfolio. All Rights Reserved.</p></footer>
+</body>
+</html>
