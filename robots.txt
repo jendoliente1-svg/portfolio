@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://porfolionimamao.netlify.app/sitemap.xml
+Sitemap: https://jeniepflio.netlify.app/sitemap.xml
